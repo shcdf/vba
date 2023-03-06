@@ -1,0 +1,7 @@
+Function pl(fromcell As Range)
+    If fromcell.CommentThreaded Is Nothing Then
+        pl = fromcell
+    Else: pl = fromcell.CommentThreaded.Text
+    End If
+
+End Function
